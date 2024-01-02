@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <!--Linking the CSS file to the html file-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles3.css">
+   
+</head>
+<header>
+    <img src="https://retralelimited-static.myshopblocks.com/images/2021/10/original/45cb9b0e433b15dd528cc98b28e96ebb.png" style="margin-top: 15px; margin-left: 80px;" height="50" width="250">
+
+    <a href="index.html"><button type="button" style="margin-left: 150px;" class="normal-button"> Home </button></a>
+    <a href="find_a_role.html"><button type="button" style="margin-left: 25px;" class="normal-button"> Find a Role </button></a>
+    <button type="button" style="margin-left: 25px;" class="normal-button"> Recruit for a Role </button>
+    <button type="button" style="margin-left: 25px;" class="normal-button"> Who are Retrale? </button>
+    <button type="button" style="margin-left: 25px;" class="normal-button"> News </button>
+    <a href="contact_us.html"><button type="button" style="margin-left: 50px;" class="red-button"> Contact Us </button></a>
+</header>
+
+<body>
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+</body>
+
+</html>
