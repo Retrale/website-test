@@ -2,6 +2,7 @@
 <html>
     <head>
       <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="slider-style.css">
       <script src="main.js" defer></script>
 
 
@@ -46,12 +47,28 @@
                 /* The image used */
                 background-color: #1e2434;
                 height: 300px;
-                border-radius: 20px;
                 
               }
             </style>
         
-        <!--<h1>Find & Post Jobs</h1>
+
+        <div class="logos">
+          <div class="logos-slide">
+              <img src="3m.svg" alt="3m Logo">
+              <img src="barstool-store.svg" alt="Barstool Store Logo">
+              <img src="budweiser.svg" alt="Budweiser Logo">
+              <img src="buzzfeed.svg" alt="Buzzfeed Logo">
+              <img src="forbes.svg" alt="Forbes Logo">
+              <img src="macys.svg" alt="Macys Logo">
+              <img src="menshealth.svg" alt="Menshealth Logo">
+              <img src="mrbeast.svg" alt="MrBeast Logo">
+          </div>
+      </div>
+      <script>
+          var copy = document.querySelector(".logos-slide").cloneNode(true);
+          document.querySelector(".logos").appendChild(copy);
+      </script>
+       <!-- <h1>Find & Post Jobs</h1>
         <p>Hello World</p>
         <img src="https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg" width="400" height="250"><br>
         <a href="https://www.akc.org/dog-breeds/german-shepherd-dog/">Facts About German German Shepherds</a><br>
