@@ -6,7 +6,7 @@
 
 .jobs-list-container h2{
     font-size: 30px;
-    border-left: 4px solid #023047;
+    border-left: 4px solid #1e2434;
     padding: 20px;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .jobs-list-container .details-btn:hover{
-    background-color: #023047;
+    background-color: #1e2434;
     color: white;
 }
 

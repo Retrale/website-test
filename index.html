@@ -3,76 +3,186 @@
     <head>
       <link rel="stylesheet" href="styles.css">
       <link rel="stylesheet" href="slider-style.css">
-      <script src="main.js" defer></script>
+      
+      <script src="col.js"></script>
 
 
         <!--Header Section - metadata-->
 </head>
-<header>
-  <img src="https://retralelimited-static.myshopblocks.com/images/2021/10/original/45cb9b0e433b15dd528cc98b28e96ebb.png" style="margin-top: 15px; margin-left: 80px;" height="50" width="250">
 
-  <a href="index.html"><button type="button" style="margin-left: 150px;" class="normal-button"> Home </button></a>
-  <a href="find_a_role.html"><button type="button" style="margin-left: 25px;" class="normal-button"> Find a Role </button></a>
-  <button type="button" style="margin-left: 25px;" class="normal-button"> Recruit for a Role </button>
-  <button type="button" style="margin-left: 25px;" class="normal-button"> Who are Retrale? </button>
-  <button type="button" style="margin-left: 25px;" class="normal-button"> News </button>
-  <a href="contact_us.html"><button type="button" style="margin-left: 50px;" class="red-button"> Contact Us </button></a>
+<!--Page Header-->
+<header>
+  <div>
+    <img src="https://retralelimited-static.myshopblocks.com/images/2021/10/original/45cb9b0e433b15dd528cc98b28e96ebb.png" style= "margin-left: 80px;" height="50" width="250">
+  </div>
+  <div>
+    <a href="index.html"><button type="button" style="margin-left: 150px;" class="normal-button"> Home </button></a>
+    <a href="find_a_role.html"><button type="button" style="margin-left: 25px;" class="normal-button"> Find a Role </button></a>
+    <button type="button" style="margin-left: 25px;" class="normal-button"> Recruit for a Role </button>
+    <button type="button" style="margin-left: 25px;" class="normal-button"> Who are Retrale? </button>
+    <button type="button" style="margin-left: 25px;" class="normal-button"> News </button>
+    <a href="contact_us.html"><button type="button" style="margin-left: 50px;;" class="red-button"> Contact Us </button></a>
+  </div>
+  
 </header>
 
     <body>
-        <br>
+        
         <!--Hero Banner-->
         <div class="banner">
-            <div>
-                
-                <br>
-            <!--Search bar-->
-            
-              <h1 style="margin-left: 80px;">Find & Post Jobs:</h1>
-              <!--Physical search bar-->
-              
-              
-              <form name="searchForm">
-                <input class="job-search" type="text" name="searchTerm" placeholder="Search Jobs..." style="margin-left: 80px ;">
-                <button type="button" class="red-button" onclick="submitSearchForm()">Search</button>
-            </form>
-              <!--search bar button-->
-             
-              
+          <!--Left side of page- Open Roles Section-->
+            <div class="left-side">  
+              <br>
+              <br>
+              <br>
+              <h1 style="margin-left: 80px;">Discover Our Open Positions</h1>
+              <br>
+              <div class="jobs-list-container">
+                <a href="find_a_role.html"><h2 style="margin-left: 80px;">5 jobs</h2></a>
+              </div>
+              <br>
+              <h3 style="margin-left: 80px;">Start your new chapter now</h3>
             </div>  
+            <!-- Right side of page, image in empty space-->
+            <div class="right-side">
+              <img src="bgimg.png" alt="" style="margin-left: 250px; height: 375px;">
+            </div>
+        </div>
+        
+        <div class="companies-partnered">
+          <h1>Client Partnerships</h1>
+        </div>
+        
+       
+        <!-- Sliding Logos Banner -->
+          <div class="logos">
+            <!-- Container for Images-->
+            <div class="logos-slide">
+                <img src="slider-images/3m.svg" alt="3m Logo">
+                <img src="slider-images/barstool-store.svg" alt="Barstool Store Logo">
+                <img src="slider-images/budweiser.svg" alt="Budweiser Logo">
+                <img src="slider-images/buzzfeed.svg" alt="Buzzfeed Logo">
+                <img src="slider-images/forbes.svg" alt="Forbes Logo">
+                <img src="slider-images/macys.svg" alt="Macys Logo">
+                <img src="slider-images/menshealth.svg" alt="Menshealth Logo">
+                <img src="slider-images/mrbeast.svg" alt="MrBeast Logo">
+            </div>
+        </div>
+        <!-- Script for repeat to make endless-->
+        <script>
+            var copy = document.querySelector(".logos-slide").cloneNode(true);
+            document.querySelector(".logos").appendChild(copy);
+        </script>
+
+
+      <div class="faq">
+        <div class="faq-left">
+                <h1>Frequently Asked Questions</h1>
+                <h4>Here you'll find our answers to the questions that frequently come our way. If you don't happen to find the answers
+                  you are looking for, please don't hesitate to get in touch at hello@retrale.com
+                </h4>
+                
+                <a href="contact_us.html"><button type="button" class="red-button"> Contact Us </button></a>
           </div>
 
-          <style>
-            .banner {
-                /* The image used */
-                background-color: #1e2434;
-                height: 300px;
-                
-              }
-            </style>
-        
+          <div class="faq-right">
+          
+            <button type="button" class="collapsible" id="collapsible">Is the salary advertised fixed?</button>
+            
+              <div class="content" id="content1">
+                <p>
+                  In short, no! <br>
+                  The salary advertised is a guideline,
+                  but there are some employers that will stick to it,
+                  and not a penny more. 
+                  If you see a role that looks a good fit, 
+                  but the salary is slightly out, get in touch!  
+                  A good employer will not let the right prospective employee slip through their fingers for the sake of a slight tweak, 
+                  and if you don't ask, you don't get!
+                  </p>
+              </div>
+              <br>
+              <button type="button" class="collapsible" id="collapsible">What happens if I'm not successful?</button>
+              
+              <div class="content" id="content2">
+                <p>
+                  <br>
+                  In short, no! <br>
+                  The salary advertised is a guideline,
+                  but there are some employers that will stick to it,
+                  and not a penny more. 
+                  If you see a role that looks a good fit, 
+                  but the salary is slightly out, get in touch!  
+                  A good employer will not let the right prospective employee slip through their fingers for the sake of a slight tweak, 
+                  and if you don't ask, you don't get!
+                  </p>
+              </div>
+              <br>
 
-        <div class="logos">
-          <div class="logos-slide">
-              <img src="3m.svg" alt="3m Logo">
-              <img src="barstool-store.svg" alt="Barstool Store Logo">
-              <img src="budweiser.svg" alt="Budweiser Logo">
-              <img src="buzzfeed.svg" alt="Buzzfeed Logo">
-              <img src="forbes.svg" alt="Forbes Logo">
-              <img src="macys.svg" alt="Macys Logo">
-              <img src="menshealth.svg" alt="Menshealth Logo">
-              <img src="mrbeast.svg" alt="MrBeast Logo">
+              <button type="button" class="collapsible" id="collapsible">Can I interview for more than one role?</button>
+              
+              <div class="content" id="content3">
+                <p>
+                  <br>
+                  In short, no! <br>
+                  The salary advertised is a guideline,
+                  but there are some employers that will stick to it,
+                  and not a penny more. 
+                  If you see a role that looks a good fit, 
+                  but the salary is slightly out, get in touch!  
+                  A good employer will not let the right prospective employee slip through their fingers for the sake of a slight tweak, 
+                  and if you don't ask, you don't get!
+                  </p>
+              </div>
+              <br>
+
+              <button type="button" class="collapsible" id="collapsible">What do I do if I'm counter offered?</button>
+              
+              <div class="content" id="content4">
+                <p>
+                  <br>
+                  In short, no! <br>
+                  The salary advertised is a guideline,
+                  but there are some employers that will stick to it,
+                  and not a penny more. 
+                  If you see a role that looks a good fit, 
+                  but the salary is slightly out, get in touch!  
+                  A good employer will not let the right prospective employee slip through their fingers for the sake of a slight tweak, 
+                  and if you don't ask, you don't get!
+                  </p>
+              </div>
+              <br>
+              
+
           </div>
       </div>
-      <script>
-          var copy = document.querySelector(".logos-slide").cloneNode(true);
-          document.querySelector(".logos").appendChild(copy);
-      </script>
-       <!-- <h1>Find & Post Jobs</h1>
-        <p>Hello World</p>
-        <img src="https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg" width="400" height="250"><br>
-        <a href="https://www.akc.org/dog-breeds/german-shepherd-dog/">Facts About German German Shepherds</a><br>
-        <button>Like</button><button>Subscribe</button>-->
-        
+
+      <div class="locations">
+
+      </div>
+
+    
+
+
+      
+      <script src="main.js"></script>
+      
     </body>
+    <!-- page footer-->
+    <footer>
+      <img src="rwob.jpg" style="margin-top: 15px; margin-left: 80px;" height="55" width="250">
+      <br><br><br>
+      <div class="footer-text">
+        <div class="email-footer">
+          <h3 style="margin-left: 80px; margin-top: 20px;">Email</h3>
+          <h4 style="margin-left: 80px; margin-top: 20px;">hello@retrale.com</h4>
+        </div>
+        <div class="info-footer">
+          <h3 style="margin-left: 300px; margin-top: 20px;">Info</h3>
+          <h4 style="margin-left: 300px; margin-top: 20px;">Terms and Conditions</h4>
+          <h4 style="margin-left: 300px; margin-top: 20px;">Privacy Policy</h4>
+          <h4 style="margin-left: 300px; margin-top: 20px;">Contact</h4>
+        </div>
+      </div>
+    </footer>
 </html>
