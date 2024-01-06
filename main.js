@@ -41,19 +41,20 @@ const jobs = [
     openPositions:"1",
     link:"#"
 },
-  {
-    title: "Software Engineer",
-    image: "https://static-00.iconduck.com/assets.00/cog-icon-2048x2048-404bqowp.png",
+{
+    title: "Principal Product Manager",
+    image: "https://cdn-icons-png.flaticon.com/512/7656/7656482.png",
     details:"Responsible for designing, developing and maintaining software systems and applications.",
-    openPositions:"2",
+    openPositions:"1",
     link:"#"
 },
+  
 
 
 
 ];
 
-const jobsHeadng = document.querySelector(".jobs-list-container h2");
+const jobsHeading = document.querySelector(".jobs-list-container h2");
 const jobsContainer = document.querySelector(".jobs-list-container .jobs");
 const jobSearch = document.querySelector(".jobs-list-container .job-search");
 
@@ -61,10 +62,10 @@ let searchTerm = "";
 
 
 if (jobs.length == 1){
-jobsHeadng.innerHTML = `${jobs.length} Job`;
+jobsHeading.innerHTML = `${jobs.length} Open Role`;
 
 }else{
-    jobsHeadng.innerHTML = `${jobs.length} Jobs`;  
+    jobsHeading.innerHTML = `${jobs.length} Open Roles`;  
 }
 
 
@@ -124,9 +125,10 @@ jobSearch.addEventListener("input", (e) => {
 function submitSearchForm() {
     const searchTerm = document.forms["searchForm"]["searchTerm"].value;
 
-    // Redirect to the find_a_role page with the search term as a query parameter
-    window.location.href = `find_a_role.html?search=${encodeURIComponent(searchTerm)}`;
+    // Perform the search/filter logic based on the searchTerm
+    // You can call a function or implement the logic directly here
+
+    // For example:
+    filterJobs(searchTerm);
 }
-
-
 
